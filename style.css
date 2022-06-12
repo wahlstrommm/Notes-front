@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#logo {
+  height: 150px;
+}
+header {
+  margin: 10px;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.685);
+}
+#LoginContainer {
+  height: 250px;
+  padding: 20px;
+  position: absolute;
+  top: 40%;
+  border-radius: 20px;
+  background-color: rgba(213, 207, 205, 0.612);
+}
+#LoginContainer > * {
+  top: 45%;
+  position: relative;
+}
+#LoginContainer > h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  color: rgb(33, 31, 31);
+
+  top: 20%;
+  position: relative;
+}
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'JetBrains Mono', monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+:root {
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+}
+
+.input {
+  font-size: 16px;
+
+  font-size: Max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  transition: 180ms box-shadow ease-in-out;
+}
+
+.input:focus {
+  border-color: hsl(var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+  box-shadow: 0 0 0 3px hsla(var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) + 40%), 0.8);
+  outline: 3px solid transparent;
+}
+
+.input:not(textarea) {
+  line-height: 1;
+  height: 3.1rem;
+}
+
+input[type='file'] {
+  font-size: 0.9em;
+  padding-top: 0.35rem;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.input[readonly] {
+  border-style: dotted;
+  cursor: not-allowed;
+  color: #777;
+}
+
+.input[disabled] {
+  --input-border: #ccc;
+
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.input + label {
+  margin-top: 2rem;
+}
+
+#loginDiv {
+  display: flex;
+  justify-content: center;
+}
+#InfoText {
+  font-size: 1.5rem;
+  text-align: center;
+  bottom: 40px;
+  color: rgb(118, 63, 63);
+}
+#loggedinContainer {
+  height: 70px;
+  width: 600px;
+  padding: 10px;
+  position: absolute;
+  top: 40%;
+  border-radius: 20px;
+  background-color: rgba(213, 207, 205, 0.612);
+}
+#loggedinContainer > * {
+  position: relative;
+  justify-content: center;
+}
+#LoggedIn {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+#btnContainer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}

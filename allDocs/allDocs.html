@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./allDocs.js" defer></script>
+    <link rel="stylesheet" href="allDocs.css" />
+    <script src="https://cdn.tiny.cloud/1/a0r2ayx26x7yg5yf7f74mzy1a2ju378kcban7s0vjrrc48i0/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="https://github.com/wahlstrommm">
+          <img src="../img/logoNotes.svg" alt="Logo" id="logo" />
+        </a>
+      </header>
+      <section id="loggedinContainer">
+        <div class="btnCotainer">
+          <a href="/Notes-front//createDoc/createDoc.html"><button class="button-30">Create Doc</button></a>
+          <a href="#"><button class="button-30">Show all Docs</button></a>
+          <button id="logOutBtn" class="button-30">Logga ut</button>
+        </div>
+      </section>
+      <section id="listContainer">
+        <hr />
+        <div id="deletedContainer"></div>
+        <!-- <hr /> -->
+        <div id="containerForDoc">
+          <div id="choiceContainer"></div>
+        </div>
+        <div id="updateContainer">
+          <label for="heading">Rubrik:</label>
+          <input type="text" id="headingInput" class="input" />
+          <textarea id="title" style="height: 400px; width: 100%"></textarea>
+          <button id="sendNewDocsBtn" class="button-30">Skicka de nya uppgifterna!</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

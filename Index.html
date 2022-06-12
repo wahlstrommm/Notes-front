@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="loginScript.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="https://github.com/wahlstrommm">
+          <img src="./img/logoNotes.svg" alt="Logo" id="logo" />
+        </a>
+      </header>
+
+      <div id="loginDiv">
+        <section id="LoginContainer">
+          <h2>Välkommen</h2>
+          <input type="text" placeholder="Användarnamn" id="userNameInput" class="input" />
+          <input type="password" placeholder="Lösenord" id="passwordInput" class="input" />
+          <button id="forgetBtn" class="button-30">Glöm lösenordet</button>
+          <button id="loginBtn" class="button-30">Logga in</button>
+          <p id="InfoText"></p>
+        </section>
+      </div>
+      <div id="LoggedIn">
+        <section id="loggedinContainer">
+          <div id="btnContainer">
+            <a href="./createDoc/createDoc.html"><button class="button-30">Skapa dokument</button></a>
+            <a href="./allDocs/allDocs.html"><button class="button-30">Visa alla dokument</button></a>
+            <button id="logOutBtn" class="button-30">Logga ut</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
